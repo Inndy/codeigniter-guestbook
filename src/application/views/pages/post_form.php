@@ -1,6 +1,6 @@
 <?php $this->load->helper('form'); ?>
 
-<?=form_open('posts/create', ['class' => 'form'])?>
+<?=form_open($post_url ?: 'posts/create', ['class' => 'form'])?>
     <div>
         <label for="form_author">作者</label>
         <?=form_input([

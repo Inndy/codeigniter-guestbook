@@ -2,11 +2,9 @@
 
 class Post_model extends CI_Model
 {
-    public $id;
     public $author;
     public $title;
     public $content;
-    public $time;
     public $del_pwd;
 
     public function __construct($from = null)
@@ -53,9 +51,9 @@ class Post_model extends CI_Model
         }
     }
 
-    public function update()
+    public function update($id)
     {
-        $this->db->update('posts', $this, ['id' => $this->id]);
+        $this->db->update('posts', $this, ['id' => $id]);
     }
 
     public function delete($id)
