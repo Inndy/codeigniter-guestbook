@@ -1,0 +1,106 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+body > .content {
+  padding: 2em;
+}
+
+.msg {
+  padding: 0 1em;
+  margin-bottom: 1em;
+
+  border-radius: 0.4em;
+
+  background-color: #dfd;
+  border: 1px solid #6f6;
+}
+
+.msg p::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding: 0.3em;
+  margin-right: 0.2em;
+
+  border-radius: 100%;
+
+  font-weight: bold;
+  color: #333;
+
+  content: '✓';
+  background-color: #6f6;
+}
+
+.err-msg {
+  background-color: #fdd;
+  border: 1px solid #f66;
+}
+
+.err-msg p::before {
+  content: '！';
+  background-color: #f66;
+}
+
+.post {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 0 1em;
+  border-radius: 0.6em;
+}
+
+.post .field-name, .post .button {
+  padding: 0.3em;
+  margin-right: 0.5em;
+
+  background-color: #666;
+  color: white;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.navbar .nav-item {
+  display: inline-block;
+  padding: 0.8em 1em;
+
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-item:hover {
+  color: #99f;
+}
+
+.form div {
+  margin-bottom: 1em;
+}
+
+.form label {
+  padding: 0.3em;
+  margin-right: 0.5em;
+
+  background-color: #666;
+  color: white;
+  font-size: 0.85em;
+}
+
+.button, .form input[type=submit], .form input[type=button] {
+  padding: 0.6em 0.8em;;
+
+  background-color: #33e;
+  border: none;
+
+  font-size: 1em;
+  color: #eee;
+  cursor: pointer;
+}
+
+.button, .form input[type=submit]:hover, .form input[type=button]:hover {
+  background-color: #22f;
+  color: #fff;
+}
