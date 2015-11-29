@@ -36,8 +36,8 @@ class Post_model extends CI_Model
 
     public function get_last($n = 10)
     {
-        $query = $this->db->get('posts', $n);
-        return $query->result();
+        $query = $this->db->select('*')->from('posts')->limit($n)->order_by('id', 'DESC');
+        return $query->get()->result();
     }
 
     public function insert()
